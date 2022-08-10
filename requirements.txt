@@ -11,3 +11,4 @@ hadoop_yarn_rest_api==1.1.0
 pandas==1.2.4
 Random_Word==1.0.7
 requests==2.25.1
+gunicorn==19.9.0
