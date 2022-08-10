@@ -8,7 +8,7 @@ import dash_bootstrap_components as dbc
 from app import app
 from dash import Dash
 from dash import callback_context as ctx
-import passgen
+import readablePassgen
 
 
 
@@ -40,4 +40,4 @@ def clicks(n_clicks):
     if n_clicks == 0 or n_clicks == None:
         return ''
     else:
-        return passgen.genPass()
+        return readablePassgen.genPass()

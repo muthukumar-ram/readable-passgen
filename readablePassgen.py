@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Created on Mon Aug  8 13:17:54 2022
+
+@author: inmkumar10
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Mon Aug  8 12:34:41 2022
 
 @author: inmkumar10
@@ -21,7 +28,7 @@ def genPass():
     color_lengths=[5,8,10]
     color_length=random.choice(color_lengths)
     
-    color_df=pd.read_csv(r'D:\pyCodes\passGen\colors_list.csv')
+    color_df=pd.read_csv(r'https://raw.githubusercontent.com/muthukumar-ram/readable-passgen/main/colors_list.csv',header='infer')
     filtered_colors=color_df[color_df['colors'].str.len() == color_length]
     random_color=filtered_colors['colors'][random.choice(list(filtered_colors.index))]
     
